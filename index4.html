@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        /* Mobile */
+
+
+@media (max-width:575px) {
+  .container{
+    width: 490px;
+    margin-right: 100px;
+  }
+  .icon{
+    font-size: 0.5rem;
+    padding-left: 12px;
+}
+.icon1{
+    font-size: 9px;
+}
+.login_container p{
+    font-size: 0.7rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+}
+.best ul{
+  padding-left: 10px;
+    font-size: 0.4rem;
+}
+.aside_Mobile_container{
+    border-right: 2px solid grey;
+    width: 100px;
+    font-size: 0.7rem;
+}
+.mobile_main img{
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+}
+.mobile_main1 img{
+    height: 200px;
+    width: 450px;
+    margin-left: 10px;
+}
+.mobile_item_list1{
+    height: 300px;
+    width: 450px;
+    margin-top: 20px;
+}
+.mobile_item_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mobile_item_list img{
+    height: 100px;
+    width: 100px;
+}
+.mobile_sale_deal{
+    height: 820px;
+    width: 450px;
+    margin-top: 20px;
+}
+.mobile_item_list_contain{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.mobile_item_list_contain img{
+    height: 150px;
+    width: 147px;
+}
+.mobile_item_item img{
+   margin-top: 10px;
+    width: 450px;
+}
+.mobile_select img{
+    width: 450px;
+    margin-top: 20px;
+}
+.mobile_item_list_contain_1 img{
+    height: 70px;
+    width: 72px;
+}
+.mobile_item1 img{
+    width: 450px;
+}
+.best_container{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+.mobile_view button{
+    padding: 20px 180px;
+}
+.mobile_section p{
+  font-size: 0.8rem;
+}
+
+.mobile_section h2{
+  font-size: 0.8rem;
+
+}
+.mobile_section h3{
+  font-size: 0.8rem;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.7rem;
+}
+.footer_container2 p{
+    font-size: 0.7rem;
+}
+.nav_footer_line{
+   width: 490px;
+}
+.footer_container h4{
+    font-size: 0.7rem;
+}
+.footer_container p{
+    font-size: 0.7rem;
+}
+.footer_container3 p{
+    font-size: 0.7rem;
+}
+.footer_container4 p{
+    font-size: 0.7rem;
+}
+}
+
+/* tablet */
+
+@media (min-width:576px) and (max-width:991px){
+    .login_container p{
+    font-size: 0.8rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+.best ul{
+  padding-left: 10px;
+    font-size: 0.8rem;
+}
+.aside_Mobile_container{
+    
+    width: 150px;
+    font-size: 0.8rem;
+}
+.mobile_main img{
+    height: 50px;
+    width: 250px;
+}
+.mobile_main1 img{
+    height: 200px;
+    width: 800px;
+}
+.mobile_item_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+}
+.mobile_item_list1{
+    width: 800px;
+    height: 400px;
+}
+.mobile_sale_deal{
+    height: 520px;
+    width: 820px;
+    margin-top: 20px;
+}
+.mobile_item_list_contain{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.mobile_item_list_contain img{
+    height: 150px;
+    width: 134px;
+}
+.mobile_item_item img{
+    width: 810px;
+    margin-top: 10px;
+}
+.mobile_select img{
+    width: 810px;
+    margin-top: 20px;
+}
+.mobile_item_list_contain_1 img{
+    height: 120px;
+    width: 132px;
+}
+.mobile_item1 img{
+    width: 810px;
+}
+.best_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:15px;
+}
+.mobile_view button{
+    padding: 20px 370px;
+}
+.mobile_section p{
+  font-size: 1rem;
+}
+.mobile_section h2{
+  font-size: 1rem;
+
+}
+.mobile_section h3{
+  font-size: 1rem;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.9rem;
+}
+.footer_container2 p{
+    font-size: 0.9rem;
+}
+.footer_container h4{
+    font-size: 0.9rem;
+}
+.footer_container p{
+    font-size: 0.9rem;
+}
+.footer_container3 p{
+    font-size: 0.9rem;
+}
+.footer_container4 p{
+    font-size: 0.9rem;
+}
+}
+
+/* Mini laptop */
+
+@media (min-width:992px) and (max-width:1199px){
+    .container_nav ul{
+    padding-left: 10px;
+    font-size: 0.8rem;
+}
+.best ul{
+  padding-left: 10px;
+    font-size: 0.8rem;
+}
+.mobile_main1 img{
+    height: 200px;
+    width: 920px;
+}
+.mobile_item_list1{
+    width: 920px;
+    height: 230px;
+    margin-top: 20px;
+}
+.mobile_item_list img{
+    height: 100px;
+    width: 120px;
+}
+.mobile_sale_deal{
+    height: 520px;
+    width: 940px;
+    margin-top: 20px;
+}
+.mobile_item_list_contain_1 img{
+    height: 150px;
+    width: 152px;
+}
+.mobile_item1 img{
+    width: 920px;
+}
+.best_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:5px;
+}
+.mobile_view button{
+    padding: 20px 420px;
+}
+.mobile_section p{
+  font-size: 1.1rem;
+}
+.mobile_section h2{
+  font-size: 1.1rem;
+
+}
+.mobile_section h3{
+  font-size: 1.1rem;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 1rem;
+}
+.footer_container2 p{
+    font-size: 1rem;
+}
+.footer_container h4{
+    font-size: 1rem;
+}
+.footer_container p{
+    font-size: 1rem;
+}
+.footer_container3 p{
+    font-size: 1rem;
+}
+.footer_container4 p{
+    font-size: 1rem;
+}
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <div class="logo_container border_white">
+                <a href="./index.html">
+                <div class="logo">
+                    <span class="dot_in">.in</span>
+                </div>
+                </a>
+                </div>
+                
+            <div class="address_container border_white">
+                <p class="icon">Delivering to chennai 600009</p>
+                <div class="icon_address">
+                    <i class="fa-solid fa-location-dot icon_location"></i>
+                    <p class="icon1">Update location</p>
+                </div>
+            </div>
+            <div class="search_container">
+                <select class="search_select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search_input">
+                <div class="search_icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="language_container border_white">
+                <div class="image_language">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+                </div>
+                <p>EN</p>
+            </div>
+            <div class="login_container border_white">
+                <p>Hello,<span>Sign in</span></p>
+                <p class="account">Accounts & Lists</p>
+            </div>
+            <div class="return_container border_white">
+                <p>Returns<span class="orders">& Orders</span></p>
+            </div>
+            <div class="cart_container border_white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>cart</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container_nav">
+          <ul>
+             <li class="border_white container_navigation"><a href="#"><i class="fa-solid fa-bars bars"></i>All</a></li>
+             <li class="border_white"><a href="./index1.html">Fresh</a></li>
+            <li class="border_white"><a href="./index2.html">Sell</a></li>
+             <li class="border_white"><a href="./index3.html">Bestsellers</a></li>
+             <li class="border_white"><a href="./index4.html">Mobiles</a></li>
+             <li class="border_white"><a href="#">Today's Deals</a></li>
+             <li class="border_white"><a href="#">MX Player</a></li>
+             <li class="border_white"><a href="#">Customer Service</a></li>
+             <li class="border_white "><a href="#">Prime</a></li>
+             <li class="border_white"><a href="#">New Releases</a></li>
+             <li class="border_white"><a href="#">Electronics</a></li>
+             <li class="border_white"><a href="#">Amazon Pay</a></li>
+             <li class="border_white"><a href="#">Fashion</a></li>
+             <li class="border_white"><a href="#">Home & Kitchen</a></li>
+             <li class="border_white"><a href="#">Books</a></li>
+             <li class="border_white"><a href="#">Computers</a></li>
+          </ul>
+        </div>
+    </nav>
+    <nav class="best">
+        <ul>
+            <li>Mobiles Accessories</li>
+            <li>Laptops & Accessories</li>
+            <li>TV & Home Entertainment</li>
+            <li>Audio</li>
+            <li>Cameras</li>
+            <li>Computer Peripherals</li>
+            <li>Smart Technology</li>
+            <li>Musical Instruments</li>
+            <li>Office & Stationery</li>
+        </ul>
+    </nav>
+    <div class="mobile_container">
+     <aside class="aside_new">
+        <div class="aside_Mobile_container">
+        <h4>Category</h4>
+        <p><i class="fa-solid fa-angle-left"></i>Electronics</p>
+        <h4>Mobiles & Accessories</h4>
+        <p>Mobiles Accessories</p>
+        <p>Mobile Broadband Devices</p>
+        <p>Bags, Wallets and Luggage</p>
+        <p>SIM Cards</p>
+        <p>Smartphones & Basic</p>
+        <p>Mobiles</p>
+        <p>Smartwatches</p>
+        <h4>Amazon Prime</h4>
+        <input type="checkbox"name="box1">
+        <label>Prime</label>
+        <h4>Delivery Day</h4>
+       <input type="checkbox"name="box2">
+        <label>Get It by Tomorrow</label>
+      <h4>Customer Reviews</h4>
+      <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span>& Up</span>
+     <h4>Item Condition</h4>
+     <input type="checkbox"name="box3">
+        <label>New</label><br>
+        <input type="checkbox"name="box4">
+        <label>Renewed</label>
+      <h4>Price</h4>
+     <p>Under ₹1,000</p>
+     <p>₹1,000 - ₹5,000</p>
+       <p>₹5,000 - ₹10,000</p>
+     <p>₹10,000 - ₹20,000</p>
+      <p>Over ₹20,000</p>
+     <h4>Deals & Discounts</h4>
+     <p>All Discounts</p>
+        <p>Today's Deals</p>
+      <h4>Made for Amazon Brands</h4>
+     <input type="checkbox"name="box5">
+        <label>Made for Amazon</label>
+      <h4>Seller</h4>
+      <input type="checkbox"name="box6">
+        <label>Cocoblu Retail</label>
+        <input type="checkbox"name="box7">
+        <label>Clicktech Retail Private Ltd</label>
+        <input type="checkbox"name="box8">
+        <label>Clicktech Business</label>
+        <input type="checkbox"name="box9">
+        <label>Pikkme</label>
+        <input type="checkbox"name="box10">
+        <label>TheGiftKart</label>
+        <input type="checkbox"name="box11">
+        <label>COLORFLOW</label>
+        <input type="checkbox"name="box12">
+        <label>VONZEE<sup>@</sup></label>
+        <h4>New Arrivals</h4>
+         <p>Last 30 days</p>
+         <p>Last 90 days</p>
+         <h4>Top Brands in Electronics</h4>
+         <input type="checkbox"name="box12">
+        <label>Top Brands</label>
+        <h4>Availability</h4>
+         <input type="checkbox"name="box12">
+        <label>Include Out of Stock</label>
+        <h4>Discount</h4>
+        <p>10% Off or more</p>
+        <p>25% Off or more</p>
+        <p>35% Off or more</p>
+        <p>50% Off or more</p>
+        <p>60% Off or more</p>
+        <p>70% Off or more</p>
+        <h4>Pay On Delivery</h4>
+        <input type="checkbox"name="box12">
+        <label>Eligible for Pay On Delivery</label>
+     </div>
+     </aside>
+     <main>
+        <div class="mobile_main">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/Navigator/Accessories.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/OnePlus15/Sale/CLP/Navigator.png">
+        </div>
+        <div class="mobile_main1">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/nbshagun/16thJuly/Banner_1.gif">
+        </div>
+        <div class="mobile_item">
+           <div class="mobile_item_list1">
+            <h2>Latest launches in Mobiles & Accessories</h2>
+            <div class="mobile_item_list">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/vinambia/realme90seriesteaser2/D351671219__New_Latest-launches-new-temp_978x900._SS600_QL85_.jpg">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/Isha/Xiaomi/Redmi15C/Ref/D345870644_IN_WLD_Redmi15C_New-Launch_slider_978x900._SS600_QL85_.jpg">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/OnePlus15R/Teaser/GW/4thDec/Latest-launches-new-temp_978x900._SS600_QL85_.jpg">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/jkknnet/iQOO15/6thdec/D327688557_Latest-launches-new-temp_978x900._SS600_QL85_.jpg">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/Mounika/Dec6/D354124109_IN_WLD_OPPO_A6x_5G_Soft-Launch-2025_Latest-launches-new-temp_978x900._SS600_QL85_.jpg">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/OnePlus15/D328767964_WLD_OnePlus_15_NewLaunch_Latest-launches-new-temp_978x900_2._SS600_QL85_.jpg">
+            </div>
+           </div>
+        </div>
+        <div class="mobile_sale_deal">
+        <div class="main_image_sale">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/TDOW/AprRevamp/Top-deals_1_01.jpg">
+        </div>
+        <div class="mobile_item_list_contain">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/jkknnet/1synov/iq15_580x740.png">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/OnePlus15/Sale/CLP/iQOOZ10R_Copy_2_580x740.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/Priya/M17/Galaxy_M17__1.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/CLP/2025/Dec/nord_5_580x740_2.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/vinambia/realmendec5th/realme_80_lite_4G_1.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/Isha/Xiaomi/WD/n/Redmi_A4_5G_18.jpg">
+        </div>
+        <div class="mobile_item_list_contain">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/Madhav/Oct/Apple/15/iPhone_16_6.png">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/jkknnet/iqoo15/30thNov/iQOO_Neo_10R_580x740.png">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/Priya/S25u/Galaxy_S25_Ultra_5G_copy_1_580x740.png">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/Isha/Xiaomi/POCO_M6_Plus_5G_21.png">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/debarsh/realme/Honor_X9c_5G_580x740.png">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/Mounika/Dec5/LAVA_Agni_4.jpg">
+        </div>
+        </div>
+        <div class="mobile_item_item">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/OnePlus15/ShotOnOnePlus/Oneplus15_Header_1242x450.gif">
+        </div>
+        <div class="mobile_select">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_01._CB804355852_.jpg">
+        </div>
+        <div class="mobile_item_list_contain_1">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_02._CB804355852_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_04._CB804355852_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_06._CB804355852_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Wireless/jkknnet/iQoo/switchover/WhatsApp_Image_2025-08-07_at_4.48.46_PM._CB803658130_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_03._CB804355852_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/AmazonStores/Revamp/Amazon-Stores_07._CB804355852_.jpg">
+        </div>
+        <div class="mobile_item1">
+            <img src="https://m.media-amazon.com/images/G/31/img22/WLA/2025/Familyman/D335042523_IN_WLA_Familyman-Season4_1400x800_1.jpg">
+        </div>
+        <div class="bestseller_container1">
+            
+            <div class="best_container">
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/81CQZB2t52L._AC_UL320_.jpg">
+                <p>Redmi 13 5G Prime Edition, Hawaiian<p>
+                <p> Blue, 8GB+128GB | India Debut SD 4</p> 
+                <p>Gen 2 AE | 108MP Pro Grade Camera |</p>
+                <p>6.79in Largest Display in Segment</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹11,499.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹11,499.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/61nxQ62qglL._AC_UL320_.jpg">
+                <p>OnePlus Nord CE4 (Celadon Marble,<p>
+                <p>8GB RAM, 128GB Storage) | Lifetime</p> 
+                <p>Display Warranty | Qualcomm®</p>
+                <p>Snapdragon™ 7 Gen 3 - Best</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹18,998.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹24,999.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/81BGKLI+cWL._AC_UL320_.jpg">
+                <p>Redmi 13 5G Prime Edition, Hawaiian<p>
+                <p> Blue, 8GB+128GB | India Debut SD 4</p> 
+                <p>Gen 2 AE | 108MP Pro Grade Camera |</p>
+                <p>6.79in Largest Display in Segment</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹8,299.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹11,499.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_UL320_.jpg">
+                <p>Redmi A4 5G (Starry Black, 4GB RAM<p>
+                <p>64GB Storage) | Segment Largest</p> 
+                <p>6.88in 120Hz | 50MP Dual Camera |</p>
+                <p>18W Fast Charging | Charger in The Box</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹7,699.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹10,499.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+            </div>
+            </div>
+
+            <div class="bestseller_container1">
+            
+            <div class="best_container">
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/41uSdnQa7nL._AC_UL320_.jpg">
+                <p>APFEN® Type C to Lightning [MFi<p>
+                <p>Certified] Fast Charging Cable</p> 
+                <p>Compatible with iPhone 14/14 Pro/ 14</p>
+                <p>Pro Max/ 13/13 Pro/ 13 Pro Max/</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹273.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹1,499.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/617qw0QPA8L._AC_UL320_.jpg">
+                <p>Kratos K9 Selfie Stick Tripod With Light<p>
+                <p>67 inch /170CM Reinforced Tripod for</p> 
+                <p>Mobile Phone, Multi-Functional</p>
+                <p>Bluetooth Long Selfie Stick</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹596.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹2,999.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/512UVkoMMEL._AC_UL320_.jpg">
+                <p>Samsung Original 25W Type-C Travel<p>
+                <p> Adaptor Without Cable, White</p> 
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹897.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹1,499.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+
+            <div class="mobile_item_listed">
+                <p class="mobile_poly">Bestseller</p>
+                <img src="https://m.media-amazon.com/images/I/61W8xeZTwxL._AC_UL320_.jpg">
+                <p>Ambrane Unbreakable 3A Fast Charging<p>
+                <p>1.5m Braided Type C Cable for</p> 
+                <p>Smartphones, Tablets & other Type C</p>
+                <p>devices, 480Mbps Data Sync, Quick</p>
+                <span>4.0</span><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="mobile_amount">₹149.00<span class="mobile_amount1">M.R.P:</span><span class="mobile_amount2">₹499.00</span><span class="mobile_amount3">(43% off)</span></p>
+                <p class="mobile_amount4">Save extra with No Cost EMI</p>
+                <p class="mobile_amount5">FREE delivery Fri, 12 Dec</p>
+            </div>
+            </div>
+            </div>
+            <div class="mobile_view">
+                <button>See all results</button>
+            </div>
+     </main>
+    </div>
+    <section class="mobile_section">
+        <h2>Buy mobile phones online at the best prices in India from Amazon.in.</h2>
+        <p>Welcome to Amazon. in, your electronics store for essentially just mobile phones and the newest additions at discounted rates. Whether you want the newest innovation, an affordable gadget, or the best mobile phones contract, Amazon. in has you covered. Being one of the prominent markets that deals with the mobile phones of various brands, you get the best model which fits your pocket and requirements.</p>
+        <h2>Choosing A Smartphone as Per Operating System</h2>
+        <p>When it comes to selecting a smartphone, the operating system that your phone is running, can be extremely important when it comes to its outcome. At Amazon. in, you can find a wide range of mobile phones equipped with the most popular operating systems: in, you can find a wide range of mobile phones equipped with the most popular operating systems:</p>
+        <h2>Android Mobile Phones</h2>
+        <p>Android is very flexible, and customizable and has a chance to choose the desired applications. Companies such as Samsung, Xiaomi, OnePlus, etc., have Android phones with quality and the best new specs in the market.</p>
+        <h2>Explore Our Top Mobile Phone Brands</h2>
+        <p>At Amazon. In this context, we encompass the largest stock of mobile phones from the globally renowned manufacturing companies.</p>
+        <p>Here are some of the top brands you can find:</p>
+        <h3>Samsung Mobile</h3>
+        <p>Dealing exclusively in innovation and possessing some of the most advanced technologies, Samsung mobile phones are preferred by people who are into technology. Samsung has devices ranging from a basic smartphone to its highest class, the most recent series of the Galaxy series.</p>
+        <h3>Xiaomi Mobile</h3>
+        <p>Xiaomi has been producing good quality cell phones that are pocket friendly. Sometimes it is seen that these mobile phones have catchy specifications and have excellent build quality and if you are highly particular about price then Xiaomi mobile phones can be a perfect choice.</p>
+        <h3>OnePlus Mobile</h3>
+        <p>This has made OnePlus popular since it is used to selling phones with all the features of high-end phones for mid-range prices. Controlling the architecture of design and performance, OnePlus mobile has been going with the model better suited for those, who want to have the premium opportunity with the economical price mark.</p>
+        <h3>Realme Mobile</h3>
+        <p>Although, Realme is another brand that also offers most of its products at an affordable price. Realme has various devices for every category; there is a device from the basic level to the advanced one.</p>
+        <h2>Compare and Choose the Best Mobile Phones Online</h2>
+        <p>This is so because there is an approximate of the outcome market of mobile phones, and thus picking the right one can be quite challenging. Here are some tips to help you make an informed decision:</p>
+        <p>Here are some tips to help you make an informed decision:</p>
+        <h2>Determine Your Budget</h2>
+        <p>Again, you are advised to set a budget before you begin to search. Amazon. in also deals in mobile phones and has a variety of phones in different classes; entry level phones and gadgets that are considered as the high-end. Mobile phones are categorized by their prices and if you are looking for the mobile phone that is under 20000, you will be spoilt for choices.</p>
+        <h2>Identify Your Needs</h2>
+        <p>Jointly, think about what hand features are going to be the most useful to you. Do you prefer a resolution of camera, long lasting battery or humongous space for storage for your phone? Eliminate choices to make them manageable by focusing on your requirements.</p>
+        <h2>Check for Deals</h2>
+        <p>Do not forget about the best offer for mobile phones on sale at Amazon. in. Also, check for the promotional prices, coupons, and attractive packages that can be useful in reducing cost.</p>
+        <h2>FAQs - Mobile Phones</h2>
+        <h3>Which are the best mobile phone brands available in India?</h3>
+        <p>The list of the top mobile Phone brands found in India is comprised of Samsung, Apple, Xiaomi, OnePlus, and Realme. Every brand is represented by a set of models that may differ in features and prices to correspond with the customers’ requirements and capacities.</p>
+        <h3>What is the minimum RAM capacity needed for a Mobile phone?</h3>
+        <p>However, for a smooth run in terms of efficiency of the mobile phone when being used by the end user, it is advisable to go for a mobile phone with RAM of not less than 4GB. RAM size of at least 6GB or 8GB is recommended for those who often use many programs and processes at the same time.</p>
+        <h3>What are the different display options available on Mobile phone?</h3>
+        <p>Regarding the outer screen protection, mobile phones come in different kinds of screens like LCD, OLED, and AMOLED displays. In most cases OLED and AMOLED displays are found to be superior in terms of color reproduction and contrast than the LCD display devices.</p>
+        <h3>What are the best display resolutions available on Mobile phone?</h3>
+        <p>The display resolutions that are best suited for the mobile phones are the Full HD or 1080p, Quad HD or 1440p, as well as the 4k Ultra HD. HD displays yield clearer pictures, and this means that your overall experience in viewing is going to be much better.</p>
+</section>
+<footer class="footer_footer2">
+   <div class="footer_container">
+   <div>
+      <h4>Get to Know Us</h4>
+      <p>About Amazon</p>
+      <p>Careers</p>
+      <p>Press Releases</p>
+      <p>Amazon Science</p>
+   </div>
+   <div>
+      <h4>Connect with Us</h4>
+      <p>Facebook</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+   </div>
+   <div>
+      <h4>Make Money with Us</h4>
+      <p>Sell on Amazon</p>
+      <p>Sell under Amazon Accelerator</p>
+      <p>Protect and Build Your Brand</p>
+      <p>Amazon Global Selling</p> 
+      <p>Supply to Amazon</p> 
+      <p> Become an Affiliate</p> 
+      <p>Fulfilment by Amazon</p> 
+      <p>Advertise Your Products</p> 
+      <p>Amazon Pay on Merchants</p> 
+   </div>
+   <div>
+      <h4>Let Us Help You</h4>
+     <p>Your Account</p>
+     <p>Returns Centre</p>
+     <p>Recalls and Product Safety Alerts</p>
+     <p>100% Purchase Protection</p>
+      <p>Amazon App Download</p>
+     <p>Help</p>
+   </div>
+   </div>
+   <div class="nav-footer-line"></div>
+   <div class="nav_footer_item">
+     <div class="image_footer">
+      <img src="./Image/amazon.png">
+     </div>
+     <div>
+      <button class="footer_button1"><i class="fa-solid fa-globe"></i>English</button>
+      <button class="footer_button1"><i class="fa-solid fa-flag"></i>India</button>
+     </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>AbeBooks</h6>
+         <p>Books, art</p>
+         <p>& collectibles</p>
+      </div>
+      <div>
+         <h6>Amazon Web Services</h6>
+         <p>Scalable Cloud</p>
+         <p>Computing Services</p>
+      </div>
+      <div>
+         <h6>Audible</h6>
+         <p>Download</p>
+         <p>Audio Books</p>
+      </div>
+      <div>
+         <h6>IMDb</h6>
+         <p>Movies, TV</p>
+         <p>& Celebrities</p>
+      </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>Shopbop</h6>
+         <p>Designer</p>
+         <p>Fashion Brands</p>
+      </div>
+      <div>
+         <h6>Amazon Business</h6>
+         <p>Everything For</p>
+         <p>Your Business</p>
+      </div>
+      <div>
+         <h6>Prime Now</h6>
+         <p>2-Hour Delivery</p>
+         <p>on Everyday Items</p>
+      </div>
+      <div>
+         <h6>Amazon Prime Music</h6>
+         <p>100 million songs, ad-free</p>
+         <p>Over 15 million podcast episodes</p>
+      </div>
+   </div>
+   <div class="footer_container3">
+      <div>
+         <p>Conditions of use & sale</p>
+      </div>
+      <div>
+         <p>Privacy Notice</p>
+      </div>
+      <div>
+         <p>Interest-Based Ads</p>
+      </div>
+   </div>
+   <div class="footer_container4">
+      <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+   </div>  
+ </footer>
+</body>
+</html>

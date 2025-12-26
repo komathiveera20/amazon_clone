@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+      /* Mobile view */
+
+@media (max-width:575.98px) {
+  .container{
+    width: 490px;
+    margin-right: 100px;
+  }
+  .search_container{
+   visibility: hidden;
+  }
+  .icon{
+    font-size: 0.5rem;
+    padding-left: 12px;
+}
+.icon1{
+    font-size: 9px;
+}
+.login_container p{
+    font-size: 0.7rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+}
+.image_container{
+   overflow: hidden;
+}
+.main{
+   top: 10px;
+}
+.card_product_container{
+    flex-direction: column;
+    gap: 20px;
+   align-items: center;
+}
+.card_item_list{
+    height: 430px;
+    
+}
+.card_item1 h2{
+ font-size: 0.9rem;
+}
+.card_item1 h6{
+ font-size: 0.7rem;
+ margin-top: 19px;
+}
+.card_list img{
+  width: 150px;
+  height: 150px;
+}
+iframe{
+    width:200px;
+     height:200px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.7rem;
+}
+.footer_container2 p{
+    font-size: 0.7rem;
+}
+.nav_footer_line{
+   width: 490px;
+}
+.footer_container h4{
+    font-size: 0.7rem;
+}
+.footer_container p{
+    font-size: 0.7rem;
+}
+.footer_container3 p{
+    font-size: 0.7rem;
+}
+.footer_container4 p{
+    font-size: 0.7rem;
+}
+}
+
+/* tablet */
+
+@media (min-width:576px) and (max-width:991.98px){
+ .login_container p{
+    font-size: 0.8rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+   .image_container{
+   overflow: hidden;
+}
+.main{
+   top: 10px;
+} 
+.card_product_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+.card_item_list{
+    height: 430px;  
+}
+.card_item1 h2{
+ font-size: 1.2rem;
+}
+.card_item1 h6{
+ font-size: 0.8rem;
+ margin-top: 25px;
+}
+.card_list img{
+  width: 200px;
+  height: 150px;
+}
+
+iframe{
+    width:400px;
+     height:200px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.9rem;
+}
+.footer_container2 p{
+    font-size: 0.9rem;
+}
+.footer_container h4{
+    font-size: 0.9rem;
+}
+.footer_container p{
+    font-size: 0.9rem;
+}
+.footer_container3 p{
+    font-size: 0.9rem;
+}
+.footer_container4 p{
+    font-size: 0.9rem;
+}
+}
+
+/* Mini laptop */
+
+@media (min-width:992px) and (max-width:1199.98px){
+  .container_nav ul{
+    padding-left: 5px;
+    font-size: 0.7rem;
+} 
+.image_container{
+   overflow: hidden;
+}
+.main{
+  top: 10px;
+   
+}
+.card_product h2{
+   font-size: 1.1rem;
+}
+.card_product_container{
+   display: flex;
+    gap: 8px;
+}
+.card_item_list{
+    height: 280px;  
+}
+.card_item1 h2{
+ font-size: 1.4rem;
+}
+.card_item1 h6{
+ font-size: 0.8rem;
+ margin-top: 29px;
+}
+.card_list img{
+  width: 150px;
+  height: 150px;
+}
+.card_product_image img{
+    height: 65px;
+    width: 65px;
+}
+iframe{
+    width:400px;
+     height:200px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 1rem;
+}
+.footer_container2 p{
+    font-size: 1rem;
+}
+.footer_container h4{
+    font-size: 1rem;
+}
+.footer_container p{
+    font-size: 1rem;
+}
+.footer_container3 p{
+    font-size: 1rem;
+}
+.footer_container4 p{
+    font-size: 1rem;
+}
+}
+      </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <div class="logo_container border_white">
+                <div class="logo">
+                    <span class="dot_in">.in</span>
+                </div>
+            </div>
+            <div class="address_container border_white">
+                <p class="icon">Delivering to chennai 600009</p>
+                <div class="icon_address">
+                    <i class="fa-solid fa-location-dot icon_location"></i>
+                    <p class="icon1">Update location</p>
+                </div>
+            </div>
+            <div class="search_container">
+                <select class="search_select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search_input">
+                <div class="search_icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="language_container border_white">
+                <div class="image_language">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+                </div>
+                <p>EN</p>
+            </div>
+            <div class="login_container border_white">
+                <p>Hello,<span>Sign in</span></p>
+                <p class="account">Accounts & Lists</p>
+            </div>
+            <div class="return_container border_white">
+                <p>Returns<span class="orders">& Orders</span></p>
+            </div>
+            <div class="cart_container border_white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>cart</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container_nav">
+          <ul>
+             <li class="border_white container_navigation"><a href="#"><i class="fa-solid fa-bars bars"></i>All</a></li>
+             <li class="border_white"><a href="./index1.html">Fresh</a></li>
+             <li class="border_white"><a href="./index2.html">Sell</a></li>
+             <li class="border_white"><a href="./index3.html">Bestsellers</a></li>
+             <li class="border_white"><a href="./index4.html">Mobiles</a></li>
+             <li class="border_white"><a href="#">Today's Deals</a></li>
+             <li class="border_white"><a href="#">MX Player</a></li>
+             <li class="border_white"><a href="#">Customer Service</a></li>
+             <li class="border_white "><a href="#">Prime</a></li>
+             <li class="border_white"><a href="#">New Releases</a></li>
+             <li class="border_white"><a href="#">Electronics</a></li>
+             <li class="border_white"><a href="#">Amazon Pay</a></li>
+             <li class="border_white"><a href="#">Fashion</a></li>
+             <li class="border_white"><a href="#">Home & Kitchen</a></li>
+             <li class="border_white"><a href="#">Books</a></li>
+             <li class="border_white"><a href="#">Computers</a></li>
+          </ul>
+        </div>
+        
+        <!-- <div class="sidebar_navigation"> -->
+         <div class="sidebar_navigation_bar">
+            <ul>
+               <li class="item_sidebar"><i class="fa-solid fa-circle-user"></i>Hello, Sign in</li>
+               <li class="item_sidebar1"><h3>Trending</h3></li>
+               <li class="item_sidebar1"><p>Bestsellers</p></li>
+               <li class="item_sidebar1"><p>New Releases</p></li>
+               <li class="item_sidebar1"><p>Movers and Shakers</p></li>
+               <li class="item_sidebar2"></li>
+               <li class="item_sidebar1"><h3>Digital Content and Devices</h3></li>
+               <li class="item_sidebar1"><p>Echo & Alexa</p></li>
+               <li class="item_sidebar1"><p>Fire TV</p></li>
+               <li class="item_sidebar1"><p>Kindle E-Readers & eBooks</p></li>
+               <li class="item_sidebar1"><p>Audible Audiobooks</p></li>
+               <li class="item_sidebar1"><p>Amazon prime video</p></li>
+               <li class="item_sidebar1"><p>Amazon Prime Music</p></li>
+               <li class="item_sidebar2"></li>
+                <li class="item_sidebar1"><h3>Shop by Category</h3></li>
+               <li class="item_sidebar1"><p>Mobilies, Computers</p></li>
+               <li class="item_sidebar1"><p>TV, Appliances, Electronics</p></li>
+               <li class="item_sidebar1"><p>Men's Fashion</p></li>
+               <li class="item_sidebar1"><p>Women's Fashion</p></li>
+               <li class="item_sidebar1"><p>See all</p></li>
+               <li class="item_sidebar2"></li>
+                <li class="item_sidebar1"><h3>Programs & Features</h3></li>
+               <li class="item_sidebar1"><p>Gift Cards & Mobile Recharges</p></li>
+               <li class="item_sidebar1"><p>Amazon Launchpad</p></li>
+               <li class="item_sidebar1"><p>Amazon Business</p></li>
+               <li class="item_sidebar1"><p>Handloom and Handicrafts</p></li>
+               <li class="item_sidebar1"><p>See all</p></li>
+               <li class="item_sidebar2"></li>
+                <li class="item_sidebar1"><h3>Help & Settings</h3></li>
+               <li class="item_sidebar1"><p>Your Account</p></li>
+               <li class="item_sidebar1"><p>Customer Service</p></li>
+               <li class="item_sidebar1"><p>Sign in</p></li>
+            </ul>
+         </div>
+        <!-- </div> -->
+    </nav>
+
+    <section>
+        <div class="image_container">
+           <div class="image_list">
+              <div class="image_item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG25/Home/2025/GW/BAU/Nov/Newlaunch/V1/Mega_home_sale_BAU_PC_-_Trendy_showpieces._CB778586680_.jpg">
+              </div>
+              <div class="image_item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/BAU_BTF/Nov/Unrec/Shoes/1/30001._CB542120021_.jpg">
+              </div>
+              <div class="image_item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2025/GW/BAU/Unrec/PC/934044815._CB551384116_.jpg">
+              </div>
+              <div class="image_item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/ridha/GW_Unrec/D323819370_DesktopHero_3000x1200._CB778388200_.jpg">
+              </div>
+              <div class="image_item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Media/Unrec/Live_PC_Hero_Lifestyle_3000x1200-m-2x._CB780065834_.jpg">
+              </div>
+              <div class="image_item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img15/pcacc25/img15jup25pcahp2bPC_Hero_key1_Free_3000x1200.jpg._CB778026675_.jpg">
+              </div>
+           </div>
+
+           <div class="image_button_container">
+             <button class="slide_button"><i class="fa-solid fa-chevron-left"></i></button>
+             <button class="slide_button"><i class="fa-solid fa-chevron-right"></i></button>
+           </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="card_product_container">
+            <div class="card_product">
+                <h2>Revamp your home in style | Up to 55% off</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg">
+                    <p>Up to 55% off</p>
+                    <p>Cushion covers</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Figurines</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg">
+                    <p>Up to 20% off</p>
+                    <p>Home storage</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg">
+                    <p>Up to 25% off</p>
+                    <p>Lighting solutions</p>
+                 </div>
+                </div>
+                <button class="card_product_button">Explore All</button>
+            </div>
+
+            <div class="card_product">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Laptops</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/KitchenAppliances_186_116_10._SY116_CB777673831_.jpg">
+                    <p>Up to 60% off</p>
+                    <p>appliances</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg">
+                    <p>Min.50% off | office</p>
+                    <p>furniture</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/TV_186_116_10._SY116_CB777675154_.jpg">
+                    <p>Up to 40% off</p>
+                    <p>Televisions</p>
+                 </div>
+                </div>
+                <button class="card_product_button">Create a free account</button>
+            </div>
+
+            <div class="card_product">
+                <h2>Appliances for your home | Up to 55% off</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Air conditioners</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg">
+                    <p>Up to 55% off</p>
+                    <p>Refrigerators</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg">
+                    <p>Up to 30% off</p>
+                    <p>Microwaves</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Washing machines</p>
+                 </div>
+                </div>
+                <button class="card_product_button">See more</button>
+            </div>
+
+            <div class="card_product">
+                <h2>Starting ₹149 | Headphones | Up to 55% off</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg">
+                    <p>Starting ₹249</p>
+                    <p>boAt</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg">
+                    <p>Starting ₹349</p>
+                    <p>boult</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg">
+                    <p>Starting ₹649</p>
+                    <p>Noise</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg">
+                    <p>Starting ₹149</p>
+                    <p>Zebronics</p>
+                 </div>
+                </div>
+                <button class="card_product_button">See all offers</button>
+            </div>
+        </div>
+
+
+        <div class="card_product_container">
+            <div class="card_product">
+                <h2>Starting ₹49 | Deals on home essentials</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wipes_low_res_V1._SY116_CB549138744_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Cleaning supplies</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Shower_heads_low_res_V1._SY116_CB549138744_.jpg">
+                    <p>Up to 35% off</p>
+                    <p>Bathroom</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools_low_res_V1._SY116_CB549138744_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Home tools</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers_low_res_V1._SY116_CB549138744_.jpg">
+                    <p>Up to 20% off</p>
+                    <p>Wallpapers</p>
+                 </div>
+                </div>
+                <button class="card_product_button">Explore all</button>
+            </div>
+
+            <div class="card_product">
+                <h2>Automotive essentials | Up to 60% off</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg">
+                    <p>Up to 15% off</p>
+                    <p>Cleaning accessories</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg">
+                    <p>Up to 25% off</p>
+                    <p>Tyre & rim care</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg">
+                    <p>Up to 45% off</p>
+                    <p>Helmets</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg">
+                    <p>Up to 35% off</p>
+                    <p>Vacuum cleaner</p>
+                 </div>
+                </div>
+                <button class="card_product_button">See more</button>
+            </div>
+
+            <div class="card_product">
+                <h2>Starting ₹199 | Amazon Brands & more</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_2._SY116_CB567468236_.jpg">
+                    <p>Starting ₹199 |</p>
+                    <p>Bedsheets</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_3._SY116_CB567468236_.jpg">
+                    <p>Starting ₹199 |</p>
+                    <p>Curtains</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_4._SY116_CB567468236_.jpg">
+                    <p>Minimum 40% off |</p>
+                    <p>Ironingboard</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_1._SY116_CB567468236_.jpg">
+                    <p>Up to 60% off</p>
+                    <p>decor</p>
+                 </div>
+                </div>
+                <button class="card_product_button">See more</button>
+            </div>
+
+            <div class="card_product">
+                <h2>Up to 50% off | Baby care & toys | Amazon Brands</h2>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_2_1x._SY116_CB788857785_.jpg">
+                    <p>Up to 50% off</p>
+                    <p>diapers & wipes</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_1_1x._SY116_CB788857785_.jpg">
+                    <p>Up to 50% off | Ride</p>
+                    <p>ons</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_3_1x._SY116_CB788857785_.jpg">
+                    <p>Starting ₹649 | RC</p>
+                    <p>cars</p>
+                 </div>
+                 <div class="card_item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_4_1x._SY116_CB788857785_.jpg">
+                    <p>Up to 50% off | Baby</p>
+                    <p>safety essentials</p>
+                 </div>
+                </div>
+                <button class="card_product_button">See all offers</button>
+            </div>
+        </div>
+        <div class="card_item_list">
+        <div class="card_list_item">
+          <div class="card_item1">
+          <h2>Starting ₹199 | Bring joy home with every toy</h2>
+          <h6>See more</h6>
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/51k954d7f+L._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/41cyufVtIAL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/5143HIuChfL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71EUb4yTXpL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/61VcfDefvZL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/61Zrx8KcwTL._AC_SY200_.jpg">
+          </div>
+         </div>
+         </div>
+          
+         <div class="card_item_list">
+         <div class="card_list_item">
+          <div class="card_item1">
+          <h2>Starting ₹70,348 | From daily commutes to weekend thrills</h2>
+          <h6>See all offers</h6>
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/81CEjSdYKQL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/61GAQ0KSXTL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71yMX-W42lL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71BjxLLL-bL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/51Bwgp3URHL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/51f8E0WkzoL._AC_SY200_.jpg">
+          </div>
+         </div>
+         </div>
+         <div class="card_product_container">
+            <div class="card_product">
+                <h2>Up to 60% off | Your next smart TV awaits</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/61ZvR3PzrjL._AC_SY195_.jpg"><br><br><br>
+                    <p>Sony HT-S20R Real 5.1ch Dolby Digital Soundbar for TV with subwoofer and Compact Rear Speakers, 5.1ch Home Theatre System (400W,Bluetooth & USB Connectivity, HDMI & Optical connectivity)</p><br>
+                    <p>₹17,990</p>
+                 </div>
+                 </div>
+                 </div>
+            <div class="card_product">
+                <h2>Up to 60% off | Home & kitchen essentials</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/71QED8-OFhL._AC_SY195_.jpg"><br><br><br>
+                    <p>hago Plastic Fridge Storage Boxes Freezer Storage Containers, Container for Kitchen Storage Set, Storage in Kitchen, Draining Crisper Refrigerator Food Box (1), 1000 ml, White</p><br>
+                    <p>₹267.00</p>
+                 </div>
+                 </div>
+                 </div>
+            <div class="card_product">
+                <h2>Up to 55% off | Electronics & accessories</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/71YctMdZFwL._AC_SY195_.jpg"><br><br><br>
+                    <p>Nervfit Newly Launched Blaze Smartwatch 1.4” LED Display, Bluetooth Calling, IP67 Waterproof, Heart Rate & SpO2 Monitor, Sleep & Stress Tracking, 7-Day Battery, Fitness & Sports Modes (Silver Grey)</p><br>
+                    <p>₹2,199.00</p>
+                 </div>
+                 </div>
+                 </div>
+            <div class="card_product">
+                <h2>Up to 60% off | Trending products</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/61JeMF3xF-L._AC_SY195_.jpg"><br><br><br>
+                    <p>Scalp Massage, Solar Powered Scalp Massager (Marble Pink), Head Massager, Hair Massager For Hair Growth.Gently massage away stress and tension with flexible silicone fingers that knead.</p><br>
+                    <p>₹149.00</p>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 
+                 <div class="card_product_container">
+            <div class="card_product">
+                <h2>Up to 70% off | Top deals from Small Businesses</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/81IpIeoa1mL._AC_SY175_.jpg"><br><br><br>
+                    <p>MGNLR Paper Vintage Aesthetic Scrapbook Kit(346Pcs) Scrapbooking Supplies Kit.Perfect For Decorating Your Journalling Supplies Or Journal Stickers Aesthetic. </p><br>
+                    <p>₹359.00</p><br>
+                    <div class="card_product_image">
+                     <img class="card_product_img1" src="https://m.media-amazon.com/images/I/81IpIeoa1mL._AC_SY55_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/51TzeN1lbSL._AC_SY55_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/61kZej-vP2L._AC_SY55_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/81Bd7FcS1fL._AC_SY55_.jpg">
+                    </div>
+                 </div>
+                 </div>
+                 </div>
+            <div class="card_product">
+                <h2>Starting ₹199 | Budget buys from Emerging</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/71f7JzhW1JL._AC_SY170_.jpg"><br><br><br>
+                    <p>Baby Nail Trimmer | New Born Essentials | Baby Nail Cutter New Born 0-12 Months with 6 Filer Heads Adjustment |1 Year Warranty |, Pink, White, 1 Count </p><br>
+                    <p>₹300.00</p><br>
+                    <div class="card_product_image">
+                     <img class="card_product_img1" src="https://m.media-amazon.com/images/I/71f7JzhW1JL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/616J-W0EvTL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/61-zeeEPDFL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/71JACS2Al2L._AC_SY170_.jpg">
+                    </div>
+                 </div>
+                 </div>
+                 </div>
+            <div class="card_product">
+                <h2>Up to 60% off | Best offers on kitchen products </h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/61-6yDuvBxL._AC_SY170_.jpg"><br><br><br>
+                    <p>Car Air Purifier Ionizer - Premium - Zero Filter - Alluminium - 10 Million Negative Ions - Kills 99.9% Viruses - Removes Dust - Portable - Designed in Japan - 2025 - USB</p><br>
+                    <p>₹750.00</p><br>
+                    <div class="card_product_image">
+                     <img class="card_product_img1" src="https://m.media-amazon.com/images/I/61-6yDuvBxL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/51DNiKZ855L._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/61VwuY8hiyL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/71ao5tgRCGL._AC_SY170_.jpg">
+                    </div>
+                 </div>
+                 </div>
+                 </div>
+            <div class="card_product">
+                <h2>Up to 80% off | Latest collections from Indian</h2><br><br>
+                <div class="card_product_list">
+                 <div class="card_item">
+                    <img style="margin-left: 80px;" src="https://m.media-amazon.com/images/I/913irsXY8nL._AC_SY170_.jpg"><br><br><br>
+                    <p>Blue Nebula Acacia Wood Coaster Set (Set of 4) – Premium Handcrafted Wooden Drink Coasters with Stunning Enamel Artwork, Stylish & Durable Tabletop Protection</p><br>
+                    <p>₹200.00</p><br>
+                    <div class="card_product_image">
+                     <img class="card_product_img1" src="https://m.media-amazon.com/images/I/913irsXY8nL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/81E2mcZDGkL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/81BElxcnowL._AC_SY170_.jpg">
+                     <img class="card_product_img2" src="https://m.media-amazon.com/images/I/81wEBYxXiwL._AC_SY170_.jpg">
+                    </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+               <div class="card_item_list">
+         <div class="card_list_item">
+          <div class="card_item1">
+          <h2>Amazon LIVE - Watch, Chat & Shop LIVE</h2>
+          <h6>See more from Amazon Live</h6>
+          </div>
+           <iframe src="https://www.youtube.com/embed/VysKsjhXny4" title="Amazon Kitchen Items😍New Gadgets, Smart Appliances, Kitchen Utensils|Amazon Smart Appliances" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71t9X6nSmbL._SX160_QL100_AC_SCLZZZZZZZ_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/51HKajX7fJL._SX160_QL100_AC_SCLZZZZZZZ_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/51l3GEJs6SL._SX160_QL100_AC_SCLZZZZZZZ_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/51QJbSZyc2L._SX160_QL100_AC_SCLZZZZZZZ_.jpg">
+          </div>
+         </div>
+         </div>   
+         <div class="card_item_list">
+         <div class="card_list_item">
+          <div class="card_item1">
+          <h2>Up to 75% off | Curated products from Small Businesses</h2>
+          <h6>See more</h6>
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/41ZAglJ6BaL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71ySwtjYJuL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71At9zBj1gL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/61CsXVlKC5L._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/71iluWLsChL._AC_SY200_.jpg">
+          </div>
+          <div class="card_list">
+            <img src="https://m.media-amazon.com/images/I/61EwhKOVCjL._AC_SY200_.jpg">
+          </div>
+         </div>
+         </div>
+   </main>
+ <footer>
+   <div class="footer_container">
+   <div>
+      <h4>Get to Know Us</h4>
+      <p>About Amazon</p>
+      <p>Careers</p>
+      <p>Press Releases</p>
+      <p>Amazon Science</p>
+   </div>
+   <div>
+      <h4>Connect with Us</h4>
+      <p>Facebook</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+   </div>
+   <div>
+      <h4>Make Money with Us</h4>
+      <p>Sell on Amazon</p>
+      <p>Sell under Amazon Accelerator</p>
+      <p>Protect and Build Your Brand</p>
+      <p>Amazon Global Selling</p> 
+      <p>Supply to Amazon</p> 
+      <p> Become an Affiliate</p> 
+      <p>Fulfilment by Amazon</p> 
+      <p>Advertise Your Products</p> 
+      <p>Amazon Pay on Merchants</p> 
+   </div>
+   <div>
+      <h4>Let Us Help You</h4>
+     <p>Your Account</p>
+     <p>Returns Centre</p>
+     <p>Recalls and Product Safety Alerts</p>
+     <p>100% Purchase Protection</p>
+      <p>Amazon App Download</p>
+     <p>Help</p>
+   </div>
+   </div>
+   <div class="nav-footer-line"></div>
+   <div class="nav_footer_item">
+     <div class="image_footer">
+      <img src="./Image/amazon.png">
+     </div>
+     <div>
+      <button class="footer_button1"><i class="fa-solid fa-globe"></i>English</button>
+      <button class="footer_button1"><i class="fa-solid fa-flag"></i>India</button>
+     </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>AbeBooks</h6>
+         <p>Books, art</p>
+         <p>& collectibles</p>
+      </div>
+      <div>
+         <h6>Amazon Web Services</h6>
+         <p>Scalable Cloud</p>
+         <p>Computing Services</p>
+      </div>
+      <div>
+         <h6>Audible</h6>
+         <p>Download</p>
+         <p>Audio Books</p>
+      </div>
+      <div>
+         <h6>IMDb</h6>
+         <p>Movies, TV</p>
+         <p>& Celebrities</p>
+      </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>Shopbop</h6>
+         <p>Designer</p>
+         <p>Fashion Brands</p>
+      </div>
+      <div>
+         <h6>Amazon Business</h6>
+         <p>Everything For</p>
+         <p>Your Business</p>
+      </div>
+      <div>
+         <h6>Prime Now</h6>
+         <p>2-Hour Delivery</p>
+         <p>on Everyday Items</p>
+      </div>
+      <div>
+         <h6>Amazon Prime Music</h6>
+         <p>100 million songs, ad-free</p>
+         <p>Over 15 million podcast episodes</p>
+      </div>
+   </div>
+   <div class="footer_container3">
+      <div>
+         <p>Conditions of use & sale</p>
+      </div>
+      <div>
+         <p>Privacy Notice</p>
+      </div>
+      <div>
+         <p>Interest-Based Ads</p>
+      </div>
+   </div>
+   <div class="footer_container4">
+      <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+   </div>  
+ </footer>    
+</body>
+</html>

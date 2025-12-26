@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+
+        /* Mobile */
+
+       @media (max-width:575.98px) {
+  .container{
+    width: 490px;
+    margin-right: 100px;
+  }
+  .icon{
+    font-size: 0.5rem;
+    padding-left: 12px;
+}
+.icon1{
+    font-size: 9px;
+}
+.login_container p{
+    font-size: 0.7rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+.best ul{ 
+  font-size: 0.9rem;
+}
+.aside_container{
+    width: 100px;
+}
+.aside_new1 p{
+    font-size: 0.6rem;
+}
+.aside_new1 h4{
+    font-size: 0.8rem;
+}
+.best_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.7rem;
+}
+.footer_container2 p{
+    font-size: 0.7rem;
+}
+.nav_footer_line{
+   width: 490px;
+}
+.footer_container h4{
+    font-size: 0.7rem;
+}
+.footer_container p{
+    font-size: 0.7rem;
+}
+.footer_container3 p{
+    font-size: 0.7rem;
+}
+.footer_container4 p{
+    font-size: 0.7rem;
+}
+}
+
+/* Tablet */
+
+@media (min-width:576px) and (max-width:991.98px){
+    .login_container p{
+    font-size: 0.8rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+.best ul{ 
+  font-size: 0.9rem;
+}
+.aside_container{
+    width: 150px;
+}
+.aside_new1 p{
+    font-size: 0.8rem;
+}
+.aside_new1 h4{
+    font-size: 1rem;
+}
+.best_container{
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.9rem;
+}
+.footer_container2 p{
+    font-size: 0.9rem;
+}
+.footer_container h4{
+    font-size: 0.9rem;
+}
+.footer_container p{
+    font-size: 0.9rem;
+}
+.footer_container3 p{
+    font-size: 0.9rem;
+}
+.footer_container4 p{
+    font-size: 0.9rem;
+}
+}
+
+/* Mini Laptop */
+@media (min-width:992px) and (max-width:1199.98px){
+    .container_nav ul{
+    padding-left: 5px;
+    font-size: 0.7rem;
+} 
+.best ul{ 
+  font-size: 1rem;
+}
+.aside_container{
+    width: 150px;
+}
+.aside_new1 p{
+    font-size: 0.9rem;
+}
+.aside_new1 h4{
+    font-size: 1rem;
+}
+.best_container{
+    display: flex;
+    gap: 10px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 1rem;
+}
+.footer_container2 p{
+    font-size: 1rem;
+}
+.footer_container h4{
+    font-size: 1rem;
+}
+.footer_container p{
+    font-size: 1rem;
+}
+.footer_container3 p{
+    font-size: 1rem;
+}
+.footer_container4 p{
+    font-size: 1rem;
+}
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <div class="logo_container border_white">
+                <a href="./index.html">
+                <div class="logo">
+                    <span class="dot_in">.in</span>
+                </div>
+                </a>
+                </div>
+                
+            <div class="address_container border_white">
+                <p class="icon">Delivering to chennai 600009</p>
+                <div class="icon_address">
+                    <i class="fa-solid fa-location-dot icon_location"></i>
+                    <p class="icon1">Update location</p>
+                </div>
+            </div>
+            <div class="search_container">
+                <select class="search_select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search_input">
+                <div class="search_icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="language_container border_white">
+                <div class="image_language">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+                </div>
+                <p>EN</p>
+            </div>
+            <div class="login_container border_white">
+                <p>Hello,<span>Sign in</span></p>
+                <p class="account">Accounts & Lists</p>
+            </div>
+            <div class="return_container border_white">
+                <p>Returns<span class="orders">& Orders</span></p>
+            </div>
+            <div class="cart_container border_white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>cart</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container_nav">
+          <ul>
+             <li class="border_white container_navigation"><a href="#"><i class="fa-solid fa-bars bars"></i>All</a></li>
+             <li class="border_white"><a href="./index1.html">Fresh</a></li>
+            <li class="border_white"><a href="./index2.html">Sell</a></li>
+             <li class="border_white"><a href="./index3.html">Bestsellers</a></li>
+             <li class="border_white"><a href="./index4.html">Mobiles</a></li>
+             <li class="border_white"><a href="#">Today's Deals</a></li>
+             <li class="border_white"><a href="#">MX Player</a></li>
+             <li class="border_white"><a href="#">Customer Service</a></li>
+             <li class="border_white "><a href="#">Prime</a></li>
+             <li class="border_white"><a href="#">New Releases</a></li>
+             <li class="border_white"><a href="#">Electronics</a></li>
+             <li class="border_white"><a href="#">Amazon Pay</a></li>
+             <li class="border_white"><a href="#">Fashion</a></li>
+             <li class="border_white"><a href="#">Home & Kitchen</a></li>
+             <li class="border_white"><a href="#">Books</a></li>
+             <li class="border_white"><a href="#">Computers</a></li>
+          </ul>
+        </div>
+    </nav>
+    <nav class="best">
+        <ul>
+            <li>Bestsellers</li>
+            <li>Hot New Releases</li>
+            <li>Movers and Shakers</li>
+            <li>Most Wished For</li>
+            <li>Most Gifted</li>
+        </ul>
+    </nav>
+    <section>
+        <div class="a2">
+        <h2>Amazon Bestsellers</h2>
+        <p>Our most popular products based on sales. Updated frequently.</p>
+        </div>
+    </section>
+    <div class="bestseller_cards">
+    <aside class="aside_new1">
+        <div class="aside_container">
+        <h4>Any Department</h4>
+        <p>Amazon Launchpad</p>
+        <p>Amazon Renewed</p>
+        <p>Apps & Games</p>
+        <p>Baby Products</p>
+        <p>Bags, Wallets and Luggage</p>
+        <p>Beauty</p>
+        <p>Books</p>
+        <p>Car & Motorbike</p>
+        <p>Clothing & Accessories</p>
+        <p>Computers & Accessories</p>
+        <p>Electronics</p>
+        <p>Garden & Outdoors</p>
+       <p>Gift Cards</p>
+      <p>Grocery & Gourmet Foods</p>
+     <p>Health & Personal Care</p>
+     <p>Home & Kitchen</p>
+     <p>Home Improvement</p>
+      <p>Industrial & Scientific</p>
+     <p>Jewellery</p>
+     <p>Kindle Store</p>
+       <p>Movies & TV Shows</p>
+     <p>Music</p>
+      <p>Musical Instruments</p>
+     <p>Office Products</p>
+     <p>Pet Supplies</p>
+        <p>Shoes & Handbags</p>
+      <p>Software</p>
+     <p>Sports, Fitness & Outdoors</p>
+      <p>Toys & Games</p>
+        <p>Video Games</p>
+     <p>Watches</p>
+     </div>
+    </aside>
+    <main>
+        <div class="bestseller_container">
+            <div class="bs_1">
+            <h3>Bestsellers in Beauty</h3>
+            <h6>See More</h6>
+            </div>
+            <div class="best_container">
+            <div class="bs_2">
+                <p class="bs_3">#1</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71cseSChxxL._AC_UL450_SR450,320_.jpg">
+                <p>Ghar Soaps Sandalwood & Saffron<p>
+                <p> Magic Soaps For Bath (100 Gms</p> 
+                <p>Pack Of 2) | Paraben Free |</p>
+                <p> Chandan & Kesar Bath Soap</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="bs_5">₹299.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#2</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51O+J5jnXcL._AC_UL450_SR450,320_.jpg">
+                <p>Cetaphil Paraben, Sulphate-Free<p>
+                <p>Gentle skin hydrating Face wash</p> 
+                <p>Cleanser with Niacinamide, Vitamin</p>
+                <p>B5 for Dry to Normal, Sensitive</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span><span class="bs_4">37,675</span>
+                <p class="bs_5">₹349.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#3</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/4125gF+XmHL._AC_UL450_SR450,320_.jpg">
+                <p>NIVEA Nourishing Body Milk 600ml<p>
+                <p> Body Lotion with Hyaluronic Acid |</p> 
+                <p>72Hr Hydration | Deep Moisture</p>
+                <p>Care for Very Dry Skin | Enriched</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">58,476</span>
+                <p class="bs_5">₹378.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#4</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41beuVz949L._AC_UL450_SR450,320_.jpg">
+                <p>Bare Anatomy Anti Dandruff |<p>
+                <p>Reduces Up To 100% Strengthens</p> 
+                <p>Hair|Derma Approved Shampoo</p>
+                <p>With Salicylic Acid & Biotin|Helps</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><span class="bs_4">10,122</span>
+                <p class="bs_5">₹219.00</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="bestseller_container">
+            <div class="bs_1">
+            <h3>Bestsellers in Jewellery</h3>
+            <h6>See More</h6>
+            </div>
+            <div class="best_container">
+            <div class="bs_2">
+                <p class="bs_3">#1</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61jUWNS8UWL._AC_UL450_SR450,320_.jpg">
+                <p>Astrotalk Dhan Yog Bracelet | <p>
+                <p>Attracts Wealth & Financial</p> 
+                <p> Prosperity | Pyrite, Citrine, &</p>
+                <p> Aventurine bracelet | Astrology</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="bs_5">₹576.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#2</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41rB86oLruL._AC_UL450_SR450,320_.jpg">
+                <p>PNG Jewellers 1.5 gram Vedhani<p>
+                <p> Gold coin 24 kt (995)</p> 
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span><span class="bs_4">37,675</span>
+                <p class="bs_5">₹21,186.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#3</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71R2QnSdv+L._AC_UL450_SR450,320_.jpg">
+                <p>Shining Diva Fashion 5 Pcs Combo <p>
+                <p> Latest Stylish Infinity Butterfly</p> 
+                <p> Pearl Necklace Jewellery Set for</p>
+                <p>Women Pendant Necklace Gifts</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">58,476</span>
+                <p class="bs_5">₹284.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#4</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61C6LyymJyL._AC_UL450_SR450,320_.jpg">
+                <p>eCraftIndia Christmas Headband <p>
+                <p>Glitter Santa Claus Xmas Tree </p> 
+                <p>Design Hair Band | Hairband for</p>
+                <p>Party Birthday</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><span class="bs_4">10,122</span>
+                <p class="bs_5">₹89.00</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="bestseller_container">
+            <div class="bs_1">
+            <h3>Bestsellers in Shoes & Handbags</h3>
+            <h6>See More</h6>
+            </div>
+            <div class="best_container">
+            <div class="bs_2">
+                <p class="bs_3">#1</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51g7FcUX91L._AC_UL450_SR450,320_.jpg">
+                <p>DOCTOR EXTRA SOFT Care<p>
+                <p>Diabetic Orthopedic Pregnancy</p> 
+                <p> Flat Super Comfort Dr Flipflops</p>
+                <p> and House Slippers For Women's</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="bs_5">₹379.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#2</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71iRWRAU7FL._AC_UL450_SR450,320_.jpg">
+                <p>Red Tape Men Pull On Clogs<p></p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span><span class="bs_4">37,675</span>
+                <p class="bs_5">₹499.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#3</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61ZnXFN61hL._AC_UL450_SR450,320_.jpg">
+                <p>Dr.Ortho Orthopedic Slippers |<p>
+                <p>Acupressure Slippers | Flip-Flops |</p> 
+                <p>For Men & Women's Slippers</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">58,476</span>
+                <p class="bs_5">₹298.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#4</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61b7FzVgFYL._AC_UL450_SR450,320_.jpg">
+                <p>SPARX Mens Sf0014G Slippers<p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><span class="bs_4">10,122</span>
+                <p class="bs_5">₹279.00</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="bestseller_container">
+            <div class="bs_1">
+            <h3>Bestsellers in Sports, Fitness & Outdoors</h3>
+            <h6>See More</h6>
+            </div>
+            <div class="best_container">
+            <div class="bs_2">
+                <p class="bs_3">#1</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/710SxepIfiL._AC_UL450_SR450,320_.jpg">
+                <p>Lifelong PVC Hex Dumbbells Pack<p>
+                <p>of 2 (5kg*2) Black Color for Home</p> 
+                <p>Gym Equipment Fitness Barbell|</p>
+                <p>Gym Exercise|Home</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="bs_5">₹499.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#2</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61Av1lptLkL._AC_UL450_SR450,320_.jpg">
+                <p>Boldfit Hand Gripper for Men &</p>
+                <p>Women Hand Grip Strengthener</p>
+                <p> for Forearm, Wrist & Finger</p>
+                <p> Workout Fitness Equipment</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span><span class="bs_4">37,675</span>
+                <p class="bs_5">₹149.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#3</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71XJ3j9NhaL._AC_UL450_SR450,320_.jpg">
+                <p>Yonex Mavis 200i Nylon Shuttle </p>
+                <p>Cock, Pack of 6 (Yellow)</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">58,476</span>
+                <p class="bs_5">₹499.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#4</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/81MoTUhw-jL._AC_UL450_SR450,320_.jpg">
+                <p>Slovic Pull up Bar for Home Kids</p>
+<p> [100 KG] | No Screw Pull Up Bar</p>
+<p> Wall Mounted with Anti-Skid Grip |</p>
+<p> Pull-up Bar for Homes Workout |</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><span class="bs_4">10,122</span>
+                <p class="bs_5">₹549.00</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="bestseller_container">
+            <div class="bs_1">
+            <h3>Bestsellers in Home & Kitchen</h3>
+            <h6>See More</h6>
+            </div>
+            <div class="best_container">
+            <div class="bs_2">
+                <p class="bs_3">#1</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71T2M3bz77L._AC_UL450_SR450,320_.jpg">
+                <p>Amazon Brand - Presto! Garbage</p>
+<p> Bags | Medium | 180 Count | 30 </p>
+<p>Bags X 6 Rolls | 19 X 21 Inches | For</p>
+<p> Dry & Wet Waste | Black</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="bs_5">₹289.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#2</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71Vs-gtbVcL._AC_UL450_SR450,320_.jpg">
+                <p>AGARO Elite Lint Remover with</p> 
+<p>Cord, for Woolen Sweaters</p>
+<p>, Blankets, Jackets/Burr Remover Pill</p>
+<p> Remover from Carpets, Curtains</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span><span class="bs_4">37,675</span>
+                <p class="bs_5">₹399.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#3</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71775fRr+gL._AC_UL450_SR450,320_.jpg">
+                <p>Atom 10Kg Kitchen Weight</p>
+ <p>Machine 6 Months Manufacturer</p>
+ <p>Warranty, Digital Scale with LCD</p>
+ <p>Display, Scale for Home Baking</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">58,476</span>
+                <p class="bs_5">₹215.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#4</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61jfyTXzcAL._AC_UL450_SR450,320_.jpg">
+                <p>Milton Aura 1000 Thermosteel </p>
+<p>Bottle, 1 Litre, Grey| 24 Hours Hot</p>
+<p> and Cold | Easy to Carry | Rust &</p>
+<p> Leak Proof | Tea | Coffee | Office|</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><span class="bs_4">10,122</span>
+                <p class="bs_5">₹916.00</p>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="bestseller_container">
+            <div class="bs_1">
+            <h3>Bestsellers in Garden & Outdoors</h3>
+            <h6>See More</h6>
+            </div>
+            <div class="best_container">
+            <div class="bs_2">
+                <p class="bs_3">#1</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/612O8HhPFJL._AC_UL450_SR450,320_.jpg">
+                <p>HIT Crawling Insect Killer </p>
+<p>Cockroach Killer Spray | Instant Kill |</p>
+<p> Deep-Reach Nozzle | Fresh</p>
+<p> Fragrance, 700ml</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">20,051</span>
+                <p class="bs_5">₹250.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#2</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/61IOb4Nu6AL._AC_UL450_SR450,320_.jpg">
+                <p>Classic Mosquito Net for Double</p>
+<p> Bed | King Size Foldable</p>
+<p> Machardani | Polyester 30GSM</p>
+<p> Strong Net | PVC Coated</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span><span class="bs_4">37,675</span>
+                <p class="bs_5">₹996.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#3</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71cRik9djML._AC_UL450_SR450,320_.jpg">
+                <p>LifeKrafts Polyester Magnetic</p>
+<p> Mosquito Net for All Door Types &</p>
+<p> Sizes, Auto-Closing Insect</p>
+<p> Screen/Curtain to Keep Mosquito</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><span class="bs_4">58,476</span>
+                <p class="bs_5">₹886.00</p>
+            </div>
+
+            <div class="bs_2">
+                <p class="bs_3">#4</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/71zSI8ZHvgL._AC_UL450_SR450,320_.jpg">
+                <p>All Out Mosquito Kill Racquet | 2X </p>
+<p>Faster Charging* | Mosquito Bat |</p> 
+<p>Racket to Kill Mosquitoes Instantly</p>
+<p> | 6 Months Warranty | Long</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><span class="bs_4">10,122</span>
+                <p class="bs_5">₹446.00</p>
+            </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    <section>
+        <div class="a2">
+        <h2>About Bestsellers</h2>
+        <p>These frequently Updated Lists contain bestselling items.</p>
+        </div>
+    </section>
+     <footer class="footer_footer2">
+   <div class="footer_container">
+   <div>
+      <h4>Get to Know Us</h4>
+      <p>About Amazon</p>
+      <p>Careers</p>
+      <p>Press Releases</p>
+      <p>Amazon Science</p>
+   </div>
+   <div>
+      <h4>Connect with Us</h4>
+      <p>Facebook</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+   </div>
+   <div>
+      <h4>Make Money with Us</h4>
+      <p>Sell on Amazon</p>
+      <p>Sell under Amazon Accelerator</p>
+      <p>Protect and Build Your Brand</p>
+      <p>Amazon Global Selling</p> 
+      <p>Supply to Amazon</p> 
+      <p> Become an Affiliate</p> 
+      <p>Fulfilment by Amazon</p> 
+      <p>Advertise Your Products</p> 
+      <p>Amazon Pay on Merchants</p> 
+   </div>
+   <div>
+      <h4>Let Us Help You</h4>
+     <p>Your Account</p>
+     <p>Returns Centre</p>
+     <p>Recalls and Product Safety Alerts</p>
+     <p>100% Purchase Protection</p>
+      <p>Amazon App Download</p>
+     <p>Help</p>
+   </div>
+   </div>
+   <div class="nav-footer-line"></div>
+   <div class="nav_footer_item">
+     <div class="image_footer">
+      <img src="./Image/amazon.png">
+     </div>
+     <div>
+      <button class="footer_button1"><i class="fa-solid fa-globe"></i>English</button>
+      <button class="footer_button1"><i class="fa-solid fa-flag"></i>India</button>
+     </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>AbeBooks</h6>
+         <p>Books, art</p>
+         <p>& collectibles</p>
+      </div>
+      <div>
+         <h6>Amazon Web Services</h6>
+         <p>Scalable Cloud</p>
+         <p>Computing Services</p>
+      </div>
+      <div>
+         <h6>Audible</h6>
+         <p>Download</p>
+         <p>Audio Books</p>
+      </div>
+      <div>
+         <h6>IMDb</h6>
+         <p>Movies, TV</p>
+         <p>& Celebrities</p>
+      </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>Shopbop</h6>
+         <p>Designer</p>
+         <p>Fashion Brands</p>
+      </div>
+      <div>
+         <h6>Amazon Business</h6>
+         <p>Everything For</p>
+         <p>Your Business</p>
+      </div>
+      <div>
+         <h6>Prime Now</h6>
+         <p>2-Hour Delivery</p>
+         <p>on Everyday Items</p>
+      </div>
+      <div>
+         <h6>Amazon Prime Music</h6>
+         <p>100 million songs, ad-free</p>
+         <p>Over 15 million podcast episodes</p>
+      </div>
+   </div>
+   <div class="footer_container3">
+      <div>
+         <p>Conditions of use & sale</p>
+      </div>
+      <div>
+         <p>Privacy Notice</p>
+      </div>
+      <div>
+         <p>Interest-Based Ads</p>
+      </div>
+   </div>
+   <div class="footer_container4">
+      <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+   </div>  
+ </footer>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        /* Mobile */
+ @media (max-width:575.98px) {
+  .container{
+    width: 490px;
+    margin-right: 100px;
+  }
+  .icon{
+    font-size: 0.5rem;
+    padding-left: 12px;
+}
+.icon1{
+    font-size: 9px;
+}
+.login_container p{
+    font-size: 0.7rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+.nav_lists ul{
+  font-size: 0.5rem;
+}
+.sell{
+    height: 300px;
+    margin: auto;   
+}
+.sell_content{
+    font-size: 30px;
+    color: #161d26;
+}
+.sell_para{
+    font-size: 13px;
+}
+.sell_image img{
+    height: 200px;
+    width: 200px;
+    margin-top: -10px;   
+}
+.sell_button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.ima{
+    height: 50px;
+    width: 50px;
+}
+.main_para{
+    font-size: 20px;
+}
+.main_first{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: AEmb, Helvetica, Arial, sans-serif;
+ }
+ .main_second{
+    font-size: 10px;
+    font-family: AEmb, Helvetica, Arial, sans-serif;
+ }
+ .main_card_content{
+    height: 100px;
+    width: 150px;
+    background-color: #f5f3ef;
+ }
+ .sell_image_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.main_button{
+    margin-left: 130px;
+}
+.main_container_item{
+    display: flex;
+   flex-direction: column;
+}
+.sell_image_i img{
+    height: 400px;
+    width: 200px;
+    margin-left: 100px;
+}
+.seel_span{
+ margin-left: 400px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.7rem;
+}
+.footer_container2 p{
+    font-size: 0.7rem;
+}
+.nav_footer_line{
+   width: 490px;
+}
+.footer_container h4{
+    font-size: 0.7rem;
+}
+.footer_container p{
+    font-size: 0.7rem;
+}
+.footer_container3 p{
+    font-size: 0.7rem;
+}
+.footer_container4 p{
+    font-size: 0.7rem;
+}
+}
+
+/* Tablet */
+
+@media (min-width:576px) and (max-width:991.98px){
+     .login_container p{
+    font-size: 0.8rem;
+}
+.container_nav ul{
+    padding-left: 10px;
+    font-size: 0.7rem;
+}
+.sell{
+    height: 350px;
+    margin: auto;   
+}
+.sell_content{
+    font-size: 40px;
+    color: #161d26;
+}
+.sell_para{
+    font-size: 18px;
+}
+.sell_image img{
+    height: 250px;
+    width: 250px;
+    margin-top: -10px;   
+}
+.sell_button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+.ima{
+    height: 80px;
+    width: 80px;
+}
+.main_para{
+    font-size: 30px;
+}
+.main_first{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: AEmb, Helvetica, Arial, sans-serif;
+ }
+ .main_second{
+    font-size: 15px;
+    font-family: AEmb, Helvetica, Arial, sans-serif;
+ }
+ .main_card_content{
+    height: 130px;
+    width: 200px;
+    background-color: #f5f3ef;
+ }
+ .sell_image_card{
+    height: 300px;
+    width: 400px;
+}
+.sell_image_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 10px;
+}
+.main_button{
+    margin-left: 280px;
+}
+.main_container_item{
+    display: flex;
+}
+.seel_span{
+ margin-left: 400px;
+}
+.sell_image_i img{
+    height: 400px;
+    width: 200px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 0.9rem;
+}
+.footer_container2 p{
+    font-size: 0.9rem;
+}
+.footer_container h4{
+    font-size: 0.9rem;
+}
+.footer_container p{
+    font-size: 0.9rem;
+}
+.footer_container3 p{
+    font-size: 0.9rem;
+}
+.footer_container4 p{
+    font-size: 0.9rem;
+}
+}
+
+/* Mini laptop */
+
+@media (min-width:992px) and (max-width:1199.98px){
+    .container_nav ul{
+    padding-left: 5px;
+    font-size: 0.7rem;
+} 
+.main_button{
+    margin-left: 450px;
+}
+.seel_span{
+ margin-left: 400px;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_container2 h6{
+    font-size: 1rem;
+}
+.footer_container2 p{
+    font-size: 1rem;
+}
+.footer_container h4{
+    font-size: 1rem;
+}
+.footer_container p{
+    font-size: 1rem;
+}
+.footer_container3 p{
+    font-size: 1rem;
+}
+.footer_container4 p{
+    font-size: 1rem;
+}
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <div class="logo_container border_white">
+                <a href="./index.html">
+                <div class="logo">
+                    <span class="dot_in">.in</span>
+                </div>
+                </a>
+                </div>
+                
+            <div class="address_container border_white">
+                <p class="icon">Delivering to chennai 600009</p>
+                <div class="icon_address">
+                    <i class="fa-solid fa-location-dot icon_location"></i>
+                    <p class="icon1">Update location</p>
+                </div>
+            </div>
+            <div class="search_container">
+                <select class="search_select">
+                    <option>All</option>
+                </select>
+                <input type="text" class="search_input">
+                <div class="search_icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="language_container border_white">
+                <div class="image_language">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+                </div>
+                <p>EN</p>
+            </div>
+            <div class="login_container border_white">
+                <p>Hello,<span>Sign in</span></p>
+                <p class="account">Accounts & Lists</p>
+            </div>
+            <div class="return_container border_white">
+                <p>Returns<span class="orders">& Orders</span></p>
+            </div>
+            <div class="cart_container border_white">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>cart</span>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container_nav">
+          <ul>
+             <li class="border_white container_navigation"><a href="#"><i class="fa-solid fa-bars bars"></i>All</a></li>
+             <li class="border_white"><a href="./index1.html">Fresh</a></li>
+            <li class="border_white"><a href="./index2.html">Sell</a></li>
+             <li class="border_white"><a href="./index3.html">Bestsellers</a></li>
+             <li class="border_white"><a href="./index4.html">Mobiles</a></li>
+             <li class="border_white"><a href="#">Today's Deals</a></li>
+             <li class="border_white"><a href="#">MX Player</a></li>
+             <li class="border_white"><a href="#">Customer Service</a></li>
+             <li class="border_white "><a href="#">Prime</a></li>
+             <li class="border_white"><a href="#">New Releases</a></li>
+             <li class="border_white"><a href="#">Electronics</a></li>
+             <li class="border_white"><a href="#">Amazon Pay</a></li>
+             <li class="border_white"><a href="#">Fashion</a></li>
+             <li class="border_white"><a href="#">Home & Kitchen</a></li>
+             <li class="border_white"><a href="#">Books</a></li>
+             <li class="border_white"><a href="#">Computers</a></li>
+          </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="sell">
+            <div class="sell_content">
+             <p>This festive season,</p><p>take your brand to</p><p> millions of homes</p><p>with Amazon.in</p>
+             <p class="sell_para">Connect with millions of customers from 18,000+ pincodes</p>
+             <button class="sell_button">Start Selling</button>
+            </div>
+            <div class="sell_image">
+                <img src="https://m.media-amazon.com/images/G/31/amazonservices/Hero_Festive_2025.png">
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="main_container">
+            <div class="main_img">
+               <img src="https://m.media-amazon.com/images/G/31/amazonservices/New_new_new_one_more.gif" class="ima">
+               <p class="main_para">Fee drop highlights</p>
+            </div>
+            <div class="main_card">
+                <div class="main_card_content">
+                    <p class="main_first">0%</p>
+                    <p class="main_second">Referral fees on products under</p>
+                    <p class="main_second">₹300</p>
+                </div>
+                <div class="main_card_content">
+                    <p class="main_first">65%</p>
+                    <p class="main_second">National shipping rates now,</p>
+                    <p class="main_second">from ₹77</p>
+                </div>
+                <div class="main_card_content">
+                    <p class="main_first">Up to 90%</p>
+                    <p class="main_second">Savings in selling fees on the</p>
+                    <p class="main_second">sale of second unit</p>
+                </div>
+            </div>
+            <div class="main_img">
+               <p class="main_para">Category level impact</p>
+            </div>
+            <div class="sell_image_content">
+                <div class="sell_image_card">
+                <div class="sell_item">
+                    <h3>Apparel</h3>
+                    <p>See upto 16.5%</p>
+                    <p>reduction in referral</p>
+                    <p>fee for products<=</p>
+                    <p>Rs.300.</p>
+                    <p class="sell_sell1">Check here<span class="sell_sell">+</span></p>
+                    <p></p>
+                </div>
+                <div class="sell_main_image">
+                    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Nazar-Buta-Cotton-Saree_grande.jpg">
+                </div>
+                </div>
+                <div class="sell_image_card">
+                <div class="sell_item">
+                    <h3>Home</h3>
+                    <p>See up to 15.5%</p>
+                    <p>reduction in referral fee</p>
+                    <p>for products <= Rs.300.</p>
+                    <p class="sell_sell1">Check here<span class="sell_sell">+</span></p>
+                    <p></p>
+                </div>
+                <div class="sell_main_image">
+                    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Home_lifestyle.jpg">
+                </div>
+                </div>
+                <div class="sell_image_card">
+                <div class="sell_item">
+                    <h3>Shoes</h3>
+                    <p>See upto 15%</p>
+                    <p>reduction in referral</p>
+                    <p>fee for products <=</p>
+                    <p>Rs.300.</p>
+                    <p class="sell_sell1">Check here<span class="sell_sell">+</span></p>
+                    <p></p>
+                </div>
+                <div class="sell_main_image">
+                    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Shoes_lifestyle.jpg">
+                </div>
+                </div>
+                <div class="sell_image_card">
+                <div class="sell_item">
+                    <h3>Jewelry</h3>
+                    <p>See up to 17.5%</p>
+                    <p>reduction in referral fee</p>
+                    <p>for products <= Rs.300.</p>
+                    <p class="sell_sell1">Check here<span class="sell_sell">+</span></p>
+                    <p></p>
+                </div>
+                <div class="sell_main_image">
+                    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Jewellery_lifestyle.jpg">
+                </div>
+                </div>
+            </div>
+            <button class="main_button">Know more about fee drop here</button>
+        </div>
+        <div class="main_container_item1">
+        <div class="main_container_item">
+            <div class="main_content_para">
+                <img src="https://m.media-amazon.com/images/G/31/amazonservices/JA.gif">
+                <p>Sellers can now get further benefits on multi-unit purchases, enjoying</p>
+                <p> up to 90%+ savings in fees on additional units sold. By creating</p
+                    ><p>promotions like "Buy 2, Get 10% Off", sellers can maximize their savings</p>
+                    <p> under the new fee structure.</p>
+                <h5>Create promotions here --></h5>
+                <img src="https://m.media-amazon.com/images/G/31/amazonservices/Az_Bazaar.gif">
+                <p>Sellers on Amazon Bazaar will continue to enjoy zero referral fees on</p>
+                <p> numerous products across a wide spectrum of categories, and can now</p>
+                <p>benefit from reduction of up to ₹18 in weight handling fees!</p>
+                <h5>Other benefits<span class="seel_span">+</span></h5>
+            </div>
+            <div class="sell_image_i">
+               <img src="https://m.media-amazon.com/images/G/31/amazonservices/Final.png">
+            </div>
+        </div>
+        </div>
+    </main>
+     <footer class="footer_footer1">
+   <div class="footer_container">
+   <div>
+      <h4>Get to Know Us</h4>
+      <p>About Amazon</p>
+      <p>Careers</p>
+      <p>Press Releases</p>
+      <p>Amazon Science</p>
+   </div>
+   <div>
+      <h4>Connect with Us</h4>
+      <p>Facebook</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+   </div>
+   <div>
+      <h4>Make Money with Us</h4>
+      <p>Sell on Amazon</p>
+      <p>Sell under Amazon Accelerator</p>
+      <p>Protect and Build Your Brand</p>
+      <p>Amazon Global Selling</p> 
+      <p>Supply to Amazon</p> 
+      <p> Become an Affiliate</p> 
+      <p>Fulfilment by Amazon</p> 
+      <p>Advertise Your Products</p> 
+      <p>Amazon Pay on Merchants</p> 
+   </div>
+   <div>
+      <h4>Let Us Help You</h4>
+     <p>Your Account</p>
+     <p>Returns Centre</p>
+     <p>Recalls and Product Safety Alerts</p>
+     <p>100% Purchase Protection</p>
+      <p>Amazon App Download</p>
+     <p>Help</p>
+   </div>
+   </div>
+   <div class="nav-footer-line"></div>
+   <div class="nav_footer_item">
+     <div class="image_footer">
+      <img src="./Image/amazon.png">
+     </div>
+     <div>
+      <button class="footer_button1"><i class="fa-solid fa-globe"></i>English</button>
+      <button class="footer_button1"><i class="fa-solid fa-flag"></i>India</button>
+     </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>AbeBooks</h6>
+         <p>Books, art</p>
+         <p>& collectibles</p>
+      </div>
+      <div>
+         <h6>Amazon Web Services</h6>
+         <p>Scalable Cloud</p>
+         <p>Computing Services</p>
+      </div>
+      <div>
+         <h6>Audible</h6>
+         <p>Download</p>
+         <p>Audio Books</p>
+      </div>
+      <div>
+         <h6>IMDb</h6>
+         <p>Movies, TV</p>
+         <p>& Celebrities</p>
+      </div>
+   </div>
+   <div class="footer_container2">
+      <div>
+         <h6>Shopbop</h6>
+         <p>Designer</p>
+         <p>Fashion Brands</p>
+      </div>
+      <div>
+         <h6>Amazon Business</h6>
+         <p>Everything For</p>
+         <p>Your Business</p>
+      </div>
+      <div>
+         <h6>Prime Now</h6>
+         <p>2-Hour Delivery</p>
+         <p>on Everyday Items</p>
+      </div>
+      <div>
+         <h6>Amazon Prime Music</h6>
+         <p>100 million songs, ad-free</p>
+         <p>Over 15 million podcast episodes</p>
+      </div>
+   </div>
+   <div class="footer_container3">
+      <div>
+         <p>Conditions of use & sale</p>
+      </div>
+      <div>
+         <p>Privacy Notice</p>
+      </div>
+      <div>
+         <p>Interest-Based Ads</p>
+      </div>
+   </div>
+   <div class="footer_container4">
+      <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+   </div>  
+ </footer>
+</body> 
+</html>   
